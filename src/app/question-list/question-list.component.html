@@ -1,0 +1,7 @@
+<p>question-list works!</p>
+<h1>Stack Overflow Questions</h1>
+<ol>
+  <li *ngFor="let question of questions">
+    <a [routerLink]="['/question', question.question_id]">{{ question.title }}</a>
+  </li>
+</ol>
